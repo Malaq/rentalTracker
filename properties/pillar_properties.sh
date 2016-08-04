@@ -21,6 +21,22 @@ highrent=""
 unit=""
 sqft=""
 
+#Build all page links for floorplans
+url="`head -n 1 $parse_file`"
+
+echo "URL: $url"
+exit 0
+
+#Pull all html and append to the raw file
+#Search the floorplan file for availability links
+#Pull all availability pages and append them together
+#Parse this file for apartment #, price, etc.
+
+
+
+
+
+
 while read line
 do
   #if new apartment

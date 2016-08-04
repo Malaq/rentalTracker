@@ -59,7 +59,7 @@ do
 
 
   #pull html
-  echo "" > $raw_html_file
+  echo "$url" > $raw_html_file
 
   for website in $url
   do
