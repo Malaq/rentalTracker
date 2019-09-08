@@ -1,7 +1,7 @@
 first=Y
-path="`dirname $0`"
+data_path="`dirname $0`"
 
-for csv in `find $path/data/ | grep .csv`
+for csv in `find ${data_path}/data/ | grep .csv`
 do
   #echo "CSV: $csv"
   length="`cat $csv | wc -l`"

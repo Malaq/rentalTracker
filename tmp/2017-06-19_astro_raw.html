@@ -1,0 +1,59 @@
+
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>500 Error</title>
+<style type="text/css">
+
+	body  { font-family: arial,helvetica, sans-serif; line-height: 1.5em;}
+	strong { color: #000; }
+
+	#content {
+		width: 500px;
+		height: 300px;
+		margin: auto;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+	}
+
+	#warning {
+		width: 201px;
+		height: 201px;
+		background: transparent url(/images/404/warning.png) no-repeat 0 0;	
+		float: left;
+	}
+
+	#fivehundred {
+		width: 289px;
+		height: 75px;
+		background: transparent url(/images/404/500.png) no-repeat 0 0;	
+		float: right;
+		padding: 0 0 15px 0;
+		margin: 20px 0 0;
+		border-bottom: 4px solid #999;
+	}
+	
+	#message {
+		width: 289px;
+		float: right;
+		color: #999;
+	}
+</style>
+</head>
+
+<body class="body">
+<div id="container">
+    <div id="content">
+		
+        <div id="warning"></div>
+        <div id="fivehundred"></div>
+        <div id="message">
+             <p>Sorry, we were unable to complete your request.<br>
+             <a class="margintop10" href="javascript:void(0);" onclick="history.go(-1);return true;">Return to the previous page.</a></p>
+		</div>  
+    </div>
+</div>
+
+</body></html>

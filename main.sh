@@ -59,7 +59,7 @@ do
 
 
   #pull html
-  echo "$url" > $raw_html_file
+  echo "" > $raw_html_file
 
   for website in $url
   do
@@ -72,7 +72,8 @@ do
   ${property_dir}/${property_type}_properties.sh "$complex" "$curr_data_dir/${rundate}_${complex}.csv" "$clean_html_file"
 done
 
-${script_dir}/merge_data.sh > ${script_dir}/large.csv
+#${script_dir}/merge_data.sh > ${script_dir}/large.csv
+${script_dir}/daily_upload.sh 
 
 enddate=`date`
 debug "End: $enddate"
