@@ -38,6 +38,7 @@ tmp_dir="${script_dir}/tmp"
 data_dir="${script_dir}/data"
 config_dir="${script_dir}/config"
 property_dir="${script_dir}/properties"
+export QT_QPA_PLATFORM=offscreen
 
 for config_file in `ls ${config_dir}/ | grep .cfg`
 do
